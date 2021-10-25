@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment04 - Factorial</title>
+</head>
+
+<body>
+    <h1>Assignment 04-1: JS - Factorial</h1>
+    <p>Enter a number:</p>
+    <input id="num">
+    <button onclick="facto()"> Calculate Factorial </button>
+
+    <p id="result"></p>
+    
+    <script>
+        function facto() {
+            var n, num, f;
+            f = 1;
+            num = document.getElementById("num").value;
+            for (n = 1; n <= num; n++) {
+                f = f * n;
+            }
+            n = n - 1;
+            document.getElementById("result").innerHTML = "The result of the factorial " + n + " is " + f;
+        }
+    </script>
+
+</body>
+
+</html>
