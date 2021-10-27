@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment04 - Palindrome</title>
+</head>
+
+<body>
+    <h1>Assignment 04-2: JS - Palindrome</h1>
+    <p>Enter a Word:</p>
+    <input type="text" id="word">
+    <button type="submit" onclick="palindrome()"> Check Palindrome </button>
+
+    <script type="text/javascript">
+        function palindrome() {
+            var a = document.getElementById('word').value;
+            var b = "";
+            for (i = a.length - 1; i >= 0; i--) {
+                b = b + a[i]
+            }
+            if (a == b) {
+                alert(value = b + " it is a Palindrome Word");
+            } else {
+                alert(value = b + " it is not a Palindrome Word");
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
