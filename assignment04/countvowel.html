@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment04 - Count Vowel</title>
+</head>
+
+<body>
+  <h1>Assignment 04-3: JS - Count Vowel</h1>
+  <p>Enter a word/sentence: </p>
+  <!--<p id="p"></p>-->
+  <input id="word" />
+  <input type="button" value="count vowel" onclick="count(word.value)" />
+
+  <script>
+    count = function (a) {
+      //var a=document.getElementById("t");
+      //console.log(a); //to see input string on console
+      n = a.length;
+      //console.log(n); //calculated length of string
+      var c = 0;
+      for (i = 0; i < n; i++) {
+        if ((a[i] == "a") || (a[i] == "e") || (a[i] == "i") || (a[i] == "o") || (a[i] == "u")) {
+          //console.log(a[i]); //just to verify
+          c += 1;
+        }
+      }
+
+      //document.getElementById("p").innerText = c;
+      alert(value = c + " vowel")
+    }
+  </script>
+
+</body>
+
+</html>
