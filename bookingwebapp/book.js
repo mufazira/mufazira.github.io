@@ -30,7 +30,7 @@ function BookNow(userName, userEmail, userPax, userRemarks, userPlace) {
             email: userEmail,
             pax: userPax,
             place: userPlace,
-            remarks: userRemarks,
+            remarks: userRemarks
         }
     }
     fetch(url, {
